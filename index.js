@@ -6,10 +6,14 @@ const getArray = () => {
   let mySet = new Set([
     'DOMAIN-SUFFIX,aistudio.google.com,Japan',
     'DOMAIN-SUFFIX,api.openai.com,Japan',
+    'DOMAIN-SUFFIX,binance.com,Taiwan',
+    'DOMAIN-SUFFIX,clerk.openrouter.ai,Japan',
     'DOMAIN-SUFFIX,generativelanguage.googleapis.com,Japan',
     'DOMAIN-SUFFIX,img.bgstatic.com,Taiwan',
     'DOMAIN-SUFFIX,img.bitgetimg.com,Taiwan',
     'DOMAIN-SUFFIX,linux.do,Proxies',
+    'DOMAIN-SUFFIX,openrouter.ai,Japan',
+    'DOMAIN-SUFFIX,tradingview.com,Proxies',
   ]);
   return Array.from(mySet);
 };
