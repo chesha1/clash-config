@@ -15,6 +15,7 @@ const getArray = () => {
     'DOMAIN-SUFFIX,linux.do,Proxies',
     'DOMAIN-SUFFIX,openrouter.ai,Japan',
     'DOMAIN-SUFFIX,tradingview.com,Proxies',
+    'DOMAIN-SUFFIX,und3fy-my.sharepoint.com,Proxies', // decrypt.day 下载
   ]);
   return Array.from(mySet);
 };
