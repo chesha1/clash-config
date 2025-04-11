@@ -16,6 +16,7 @@ const getArray = () => {
     'DOMAIN-SUFFIX,mcr.microsoft.com,Proxies', // dev container 镜像下载
     'DOMAIN-SUFFIX,openrouter.ai,Japan',
     'DOMAIN-SUFFIX,tradingview.com,Proxies',
+    'DOMAIN-SUFFIX,truthsocial.com,Japan',
     'DOMAIN-SUFFIX,und3fy-my.sharepoint.com,Proxies', // decrypt.day 下载
   ]);
   return Array.from(mySet);
