@@ -5,6 +5,9 @@
 // Taiwan：加密货币服务
 const getArray = () => {
   let mySet = new Set([
+    'DOMAIN-SUFFIX,adobe.com,REJECT', // Adobe 盗版检测
+    'DOMAIN-SUFFIX,adobe.io,REJECT', // Adobe 盗版检测
+    'DOMAIN-SUFFIX,adobestats.io,REJECT', // Adobe 盗版检测
     'DOMAIN-SUFFIX,aistudio.google.com,Japan',
     'DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com,Japan', // Google AI Studio
     'DOMAIN-SUFFIX,api.openai.com,Japan',
@@ -20,6 +23,7 @@ const getArray = () => {
     'DOMAIN-SUFFIX,tradingview.com,Proxies',
     'DOMAIN-SUFFIX,truthsocial.com,Japan',
     'DOMAIN-SUFFIX,und3fy-my.sharepoint.com,Proxies', // decrypt.day 下载
+
   ]);
   return Array.from(mySet);
 };
