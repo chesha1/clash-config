@@ -18,6 +18,7 @@ const getArray = () => {
     'DOMAIN-SUFFIX,img.bgstatic.com,Taiwan',
     'DOMAIN-SUFFIX,img.bitgetimg.com,Taiwan',
     'DOMAIN-SUFFIX,linux.do,Proxies',
+    'DOMAIN-SUFFIX,maa.plus,Proxies',
     'DOMAIN-SUFFIX,mcr.microsoft.com,Proxies', // dev container 镜像下载
     'DOMAIN-SUFFIX,openrouter.ai,Japan',
     'DOMAIN-SUFFIX,poe.com,Proxies',
