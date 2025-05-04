@@ -1,9 +1,24 @@
 // 全局拓展脚本
-// 需要三个代理组
-// Proxies：常规代理组
-// Japan：常规限制国家的服务
-// Taiwan：加密货币服务
-const getArray = () => {
+
+const myProxyGroups = () => {
+  let mySet = new Set([
+    {
+      'name': 'Japan',
+      'type': 'select',
+      'include-all-proxies': true,
+      'filter': '日本',
+    },
+    {
+      'name': 'Taiwan',
+      'type': 'select',
+      'include-all-proxies': true,
+      'filter': '台湾',
+    },
+  ]);
+  return Array.from(mySet);
+};
+
+const myRules = () => {
   let mySet = new Set([
     'DOMAIN-SUFFIX,adobe.com,REJECT', // Adobe 盗版检测
     'DOMAIN-SUFFIX,adobe.io,REJECT', // Adobe 盗版检测
@@ -13,7 +28,6 @@ const getArray = () => {
     'DOMAIN-SUFFIX,api.openai.com,Japan',
     'DOMAIN-SUFFIX,binance.com,Taiwan',
     'DOMAIN-SUFFIX,clerk.openrouter.ai,Japan',
-    'DOMAIN-SUFFIX,decrypt.day,Direct', // decrypt.day 下载
     'DOMAIN-SUFFIX,generativelanguage.googleapis.com,Japan',
     'DOMAIN-SUFFIX,img.bgstatic.com,Taiwan',
     'DOMAIN-SUFFIX,img.bitgetimg.com,Taiwan',
@@ -30,14 +44,8 @@ const getArray = () => {
   return Array.from(mySet);
 };
 
-/**
- * 配置中的规则"config.rules"是一个数组，通过新旧数组合并来添加
- * @param prependRule 添加的数组
- */
-const prependRule = getArray();
 function main(config) {
-  // 把旧规则合并到新规则后面(也可以用其它合并数组的办法)
-  let oldrules = config['rules'];
-  config['rules'] = prependRule.concat(oldrules);
+  config['proxy-groups'].push(...myProxyGroups());
+  config['rules'].push(...myRules());
   return config;
 }
