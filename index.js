@@ -26,6 +26,7 @@ const myRules = () => {
     'DOMAIN-SUFFIX,aistudio.google.com,Japan',
     'DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com,Japan', // Google AI Studio
     'DOMAIN-SUFFIX,api.openai.com,Japan',
+    'DOMAIN-SUFFIX,api.voct.dev,Japan', // ai 公益站
     'DOMAIN-SUFFIX,binance.com,Taiwan',
     'DOMAIN-SUFFIX,clerk.openrouter.ai,Japan',
     'DOMAIN-SUFFIX,generativelanguage.googleapis.com,Japan',
