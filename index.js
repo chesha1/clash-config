@@ -41,12 +41,13 @@ const myRules = () => {
     'DOMAIN-SUFFIX,tradingview.com,Proxies',
     'DOMAIN-SUFFIX,truthsocial.com,Japan',
     'DOMAIN-SUFFIX,und3fy-my.sharepoint.com,Proxies', // decrypt.day 下载
+    'DOMAIN-SUFFIX,vsassetscdn.azure.cn,Proxies', // vscode marketplace
   ]);
   return Array.from(mySet);
 };
 
 function main(config) {
   config['proxy-groups'].push(...myProxyGroups());
-  config['rules'].push(...myRules());
+  config['rules'].unshift(...myRules());
   return config;
 }
