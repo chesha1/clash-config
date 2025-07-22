@@ -29,6 +29,10 @@ const myRules = () => {
     'DOMAIN-SUFFIX,api.voct.dev,Japan', // ai 公益站
     'DOMAIN-SUFFIX,binance.com,Taiwan',
     'DOMAIN-SUFFIX,clerk.openrouter.ai,Japan',
+    'DOMAIN-SUFFIX,cursor-cdn.com,Japan',
+    'DOMAIN-SUFFIX,cursor.com,Japan',
+    'DOMAIN-SUFFIX,cursor.sh,Japan',
+    'DOMAIN-SUFFIX,cursorapi.com,Japan',
     'DOMAIN-SUFFIX,generativelanguage.googleapis.com,Japan',
     'DOMAIN-SUFFIX,img.bgstatic.com,Taiwan',
     'DOMAIN-SUFFIX,img.bitgetimg.com,Taiwan',
@@ -46,6 +50,9 @@ const myRules = () => {
   return Array.from(mySet);
 };
 
+// TODO: 用 geosite 改造，但是有点麻烦，所以直接写 rules 了
+// see also: https://github.com/v2fly/domain-list-community
+// see also: https://wiki.metacubex.one/example/conf/?h=geosite#__tabbed_2_1
 function main(config) {
   config['proxy-groups'].push(...myProxyGroups());
   config['rules'].unshift(...myRules());
