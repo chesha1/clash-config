@@ -28,6 +28,7 @@ const myRules = () => {
     'DOMAIN-SUFFIX,api.openai.com,Japan',
     'DOMAIN-SUFFIX,api.voct.dev,Japan', // ai 公益站
     'DOMAIN-SUFFIX,binance.com,Taiwan',
+    'DOMAIN-SUFFIX,bloomberg.com,Taiwan', // bloomberg 日本无法访问
     'DOMAIN-SUFFIX,clerk.openrouter.ai,Japan',
     'DOMAIN-SUFFIX,cursor-cdn.com,Japan',
     'DOMAIN-SUFFIX,cursor.com,Japan',
