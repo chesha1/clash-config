@@ -3,6 +3,12 @@
 const myProxyGroups = () => {
   let mySet = new Set([
     {
+      'name': 'America',
+      'type': 'select',
+      'include-all-proxies': true,
+      'filter': '美国',
+    },
+    {
       'name': 'Japan',
       'type': 'select',
       'include-all-proxies': true,
@@ -37,6 +43,7 @@ const myRules = () => {
     'DOMAIN-SUFFIX,generativelanguage.googleapis.com,Japan',
     'DOMAIN-SUFFIX,img.bgstatic.com,Taiwan',
     'DOMAIN-SUFFIX,img.bitgetimg.com,Taiwan',
+    'DOMAIN-SUFFIX,learning.google.com,America',
     'DOMAIN-SUFFIX,linux.do,Proxies',
     'DOMAIN-SUFFIX,maa.plus,Proxies',
     'DOMAIN-SUFFIX,mcr.microsoft.com,Proxies', // dev container 镜像下载
