@@ -52,6 +52,7 @@ const myRules = () => {
     'DOMAIN-SUFFIX,poe.com,Proxies',
     'DOMAIN-SUFFIX,polymarket.com,Proxies',
     'DOMAIN-SUFFIX,prts.plus,Proxies',
+    'DOMAIN-SUFFIX,rsshub.app,Proxies',
     'DOMAIN-SUFFIX,tradingview.com,Proxies',
     'DOMAIN-SUFFIX,truthsocial.com,Japan',
     'DOMAIN-SUFFIX,und3fy-my.sharepoint.com,Proxies', // decrypt.day 下载
