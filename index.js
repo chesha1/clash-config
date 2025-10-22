@@ -40,6 +40,7 @@ const myRules = () => {
     'DOMAIN-SUFFIX,cursor.com,Japan',
     'DOMAIN-SUFFIX,cursor.sh,Japan',
     'DOMAIN-SUFFIX,cursorapi.com,Japan',
+    'DOMAIN-SUFFIX,eu4cn.com,DIRECT',
     'DOMAIN-SUFFIX,generativelanguage.googleapis.com,Japan',
     'DOMAIN-SUFFIX,img.bgstatic.com,Taiwan',
     'DOMAIN-SUFFIX,img.bitgetimg.com,Taiwan',
