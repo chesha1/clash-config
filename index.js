@@ -44,6 +44,7 @@ const myRules = () => {
     'DOMAIN-SUFFIX,generativelanguage.googleapis.com,Japan',
     'DOMAIN-SUFFIX,img.bgstatic.com,Taiwan',
     'DOMAIN-SUFFIX,img.bitgetimg.com,Taiwan',
+    'DOMAIN-SUFFIX,imgur.com,America',
     'DOMAIN-SUFFIX,learning.google.com,America',
     'DOMAIN-SUFFIX,linux.do,Proxies',
     'DOMAIN-SUFFIX,maa.plus,Proxies',
