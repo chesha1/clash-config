@@ -9,6 +9,12 @@ const myProxyGroups = () => {
       'filter': '美国',
     },
     {
+      'name': 'Hong Kong',
+      'type': 'select',
+      'include-all-proxies': true,
+      'filter': '香港',
+    },
+    {
       'name': 'Japan',
       'type': 'select',
       'include-all-proxies': true,
@@ -43,6 +49,7 @@ const myRules = () => {
     'DOMAIN-SUFFIX,eu4cn.com,DIRECT',
     'DOMAIN-SUFFIX,fcyfzk.cn,Proxies', // 51cg1
     'DOMAIN-SUFFIX,generativelanguage.googleapis.com,Japan',
+    'DOMAIN-SUFFIX,hanime1.me,Hong Kong', // 只有香港可以访问，台湾日本都不行
     'DOMAIN-SUFFIX,img.bgstatic.com,Taiwan',
     'DOMAIN-SUFFIX,img.bitgetimg.com,Taiwan',
     'DOMAIN-SUFFIX,imgur.com,America',
