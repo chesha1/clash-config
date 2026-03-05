@@ -57,6 +57,7 @@ const myRules = () => {
     'DOMAIN-SUFFIX,linux.do,Proxies',
     'DOMAIN-SUFFIX,maa.plus,Proxies',
     'DOMAIN-SUFFIX,mcr.microsoft.com,Proxies', // dev container 镜像下载
+    'DOMAIN-SUFFIX,ondo.finance,Hong Kong',
     'DOMAIN-SUFFIX,openrouter.ai,Japan',
     'DOMAIN-SUFFIX,pendle.finance,Proxies',
     'DOMAIN-SUFFIX,poe.com,Proxies',
