@@ -61,7 +61,7 @@ const myRules = () => {
     'DOMAIN-SUFFIX,openrouter.ai,Japan',
     'DOMAIN-SUFFIX,pendle.finance,Proxies',
     'DOMAIN-SUFFIX,poe.com,Proxies',
-    'DOMAIN-SUFFIX,polymarket.com,Proxies',
+    'DOMAIN-SUFFIX,polymarket.com,Japan',
     'DOMAIN-SUFFIX,prts.plus,Proxies',
     'DOMAIN-SUFFIX,rsshub.app,Proxies',
     'DOMAIN-SUFFIX,tradingview.com,Proxies',
