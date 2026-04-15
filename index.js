@@ -78,5 +78,8 @@ const myRules = () => {
 function main(config) {
   config['proxy-groups'].push(...myProxyGroups());
   config['rules'].unshift(...myRules());
+
+  // 禁止 ipv6，避免微信上传图片异常, see also: https://github.com/clash-verge-rev/clash-verge-rev/issues/1762
+  config['dns'].ipv6 = false;
   return config;
 }
