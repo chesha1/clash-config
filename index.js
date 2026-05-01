@@ -61,7 +61,7 @@ const myRules = () => {
     'DOMAIN-SUFFIX,openrouter.ai,Japan',
     'DOMAIN-SUFFIX,pendle.finance,Proxies',
     'DOMAIN-SUFFIX,poe.com,Proxies',
-    'DOMAIN-SUFFIX,polymarket.com,Japan',
+    'DOMAIN-SUFFIX,polymarket.com,Hong Kong',
     'DOMAIN-SUFFIX,prts.plus,Proxies',
     'DOMAIN-SUFFIX,rsshub.app,Proxies',
     'DOMAIN-SUFFIX,tradingview.com,Proxies',
@@ -80,6 +80,6 @@ function main(config) {
   config['rules'].unshift(...myRules());
 
   // 禁止 ipv6，避免微信上传图片异常, see also: https://github.com/clash-verge-rev/clash-verge-rev/issues/1762
-  config['dns'].ipv6 = false;
+  // config['dns'].ipv6 = false;
   return config;
 }
