@@ -46,6 +46,7 @@ const myRules = () => {
     'DOMAIN-SUFFIX,cursor.com,Japan',
     'DOMAIN-SUFFIX,cursor.sh,Japan',
     'DOMAIN-SUFFIX,cursorapi.com,Japan',
+    'DOMAIN-SUFFIX,ethena.fi,Taiwan',
     'DOMAIN-SUFFIX,eu4cn.com,DIRECT',
     'DOMAIN-SUFFIX,fcyfzk.cn,Proxies', // 51cg1
     'DOMAIN-SUFFIX,generativelanguage.googleapis.com,Japan',
