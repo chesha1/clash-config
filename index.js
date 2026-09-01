@@ -32,6 +32,9 @@ const myProxyGroups = () => {
 
 const myRules = () => {
   let mySet = new Set([
+    // 国内网络环境较特殊，部分机场会主动限制 UDP，导致某些节点通过 QUIC 访问 YouTube 时
+    // 速度只有几百 KB/s；因此统一拒绝 UDP/443，关闭 QUIC 并让连接回退到 TCP。
+    'AND,((NETWORK,UDP),(DST-PORT,443)),REJECT',
     'DOMAIN-SUFFIX,adobe.com,REJECT', // Adobe 盗版检测
     'DOMAIN-SUFFIX,adobe.io,REJECT', // Adobe 盗版检测
     'DOMAIN-SUFFIX,adobestats.io,REJECT', // Adobe 盗版检测
