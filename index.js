@@ -45,6 +45,7 @@ const myRules = () => {
     'DOMAIN-SUFFIX,binance.com,Taiwan',
     'DOMAIN-SUFFIX,bloomberg.com,Taiwan', // bloomberg 日本无法访问
     'DOMAIN-SUFFIX,clerk.openrouter.ai,Japan',
+    'DOMAIN-SUFFIX,cloud.oracle.com,DIRECT',
     'DOMAIN-SUFFIX,cursor-cdn.com,Japan',
     'DOMAIN-SUFFIX,cursor.com,Japan',
     'DOMAIN-SUFFIX,cursor.sh,Japan',
@@ -63,6 +64,7 @@ const myRules = () => {
     'DOMAIN-SUFFIX,mcr.microsoft.com,Proxies', // dev container 镜像下载
     'DOMAIN-SUFFIX,ondo.finance,Hong Kong',
     'DOMAIN-SUFFIX,openrouter.ai,Japan',
+    'DOMAIN-SUFFIX,oraclecloud.com,DIRECT',
     'DOMAIN-SUFFIX,pendle.finance,Proxies',
     'DOMAIN-SUFFIX,poe.com,Proxies',
     'DOMAIN-SUFFIX,polymarket.com,Hong Kong',
