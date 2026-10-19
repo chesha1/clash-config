@@ -1,33 +1,11 @@
-// 全局拓展脚本
-
-const myProxyGroups = () => {
-  let mySet = new Set([
-    {
-      'name': 'America',
-      'type': 'select',
-      'include-all-proxies': true,
-      'filter': '美国',
-    },
-    {
-      'name': 'Hong Kong',
-      'type': 'select',
-      'include-all-proxies': true,
-      'filter': '香港',
-    },
-    {
-      'name': 'Japan',
-      'type': 'select',
-      'include-all-proxies': true,
-      'filter': '日本',
-    },
-    {
-      'name': 'Taiwan',
-      'type': 'select',
-      'include-all-proxies': true,
-      'filter': '台湾',
-    },
-  ]);
-  return Array.from(mySet);
+// Clash Party JavaScript 覆写：导入后关联 YYDS Pro_cn.yaml，与订阅注入覆写一起使用。
+// 复用模板已有策略组，由模板负责 provider 节点筛选、自动测速和负载均衡。
+const policyMap = {
+  'America': '美国策略',
+  'Hong Kong': '香港策略',
+  'Japan': '日本策略',
+  'Taiwan': '台湾策略',
+  'Proxies': '国外流量',
 };
 
 const myRules = () => {
@@ -83,8 +61,9 @@ const myRules = () => {
 // see also: https://github.com/v2fly/domain-list-community
 // see also: https://wiki.metacubex.one/example/conf/?h=geosite#__tabbed_2_1
 function main(config) {
-  config['proxy-groups'].push(...myProxyGroups());
-  config['rules'].unshift(...myRules());
+  const rules = myRules().map(rule => rule.replace(/[^,]+$/, policy => policyMap[policy] ?? policy));
+  // 个人规则优先；按完整规则去重，避免重复应用覆写时不断追加。
+  config.rules = [...new Set([...rules, ...(config.rules ?? [])])];
 
   // 禁止 ipv6，避免微信上传图片异常, see also: https://github.com/clash-verge-rev/clash-verge-rev/issues/1762
   // config['dns'].ipv6 = false;
