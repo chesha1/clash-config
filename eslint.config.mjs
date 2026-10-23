@@ -18,7 +18,6 @@ export default [
           fallbackSort: { type: 'unsorted' },
           ignoreCase: true,
           specialCharacters: 'keep',
-          groupKind: 'literals-first',
           partitionByNewLine: false,
           newlinesBetween: 'ignore',
           useConfigurationIf: {},

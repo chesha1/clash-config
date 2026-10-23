@@ -47,6 +47,7 @@ const myRules = () => {
     'DOMAIN-SUFFIX,poe.com,Proxies',
     'DOMAIN-SUFFIX,polymarket.com,Hong Kong',
     'DOMAIN-SUFFIX,prts.plus,Proxies',
+    'DOMAIN-SUFFIX,qbittorrent.99010101.xyz,DIRECT',
     'DOMAIN-SUFFIX,rsshub.app,Proxies',
     'DOMAIN-SUFFIX,sukebei.nyaa.si,Hong Kong',
     'DOMAIN-SUFFIX,tradingview.com,Proxies',
@@ -62,7 +63,7 @@ const myRules = () => {
 // see also: https://wiki.metacubex.one/example/conf/?h=geosite#__tabbed_2_1
 function main(config) {
   const rules = myRules().map(rule => rule.replace(/[^,]+$/, policy => policyMap[policy] ?? policy));
-  // 个人规则优先；按完整规则去重，避免重复应用覆写时不断追加。
+  // 个人规则必须放在原规则前，避免被 MATCH 兜底或其他规则提前命中；按完整规则去重。
   config.rules = [...new Set([...rules, ...(config.rules ?? [])])];
 
   // 禁止 ipv6，避免微信上传图片异常, see also: https://github.com/clash-verge-rev/clash-verge-rev/issues/1762
