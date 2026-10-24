@@ -40,6 +40,7 @@ const myRules = () => {
     'DOMAIN-SUFFIX,linux.do,Proxies',
     'DOMAIN-SUFFIX,maa.plus,Proxies',
     'DOMAIN-SUFFIX,mcr.microsoft.com,Proxies', // dev container 镜像下载
+    'DOMAIN-SUFFIX,netflixtechblog.com,Japan', // 避开部分香港节点的连接异常
     'DOMAIN-SUFFIX,ondo.finance,Hong Kong',
     'DOMAIN-SUFFIX,openrouter.ai,Japan',
     'DOMAIN-SUFFIX,oraclecloud.com,DIRECT',
