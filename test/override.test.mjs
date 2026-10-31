@@ -8,8 +8,8 @@ import { ESLint } from 'eslint';
 const filePath = fileURLToPath(new URL('../index.js', import.meta.url));
 const source = await readFile(filePath, 'utf8');
 const eslint = new ESLint({ fix: true });
-const directRule = 'DOMAIN-SUFFIX,qbittorrent.99010101.xyz,DIRECT';
-const parentRule = 'DOMAIN-SUFFIX,99010101.xyz,国外流量';
+const directRule = 'DOMAIN-SUFFIX,cloud.oracle.com,DIRECT';
+const parentRule = 'DOMAIN-SUFFIX,oracle.com,国外流量';
 const fallbackRule = 'MATCH,漏网之鱼';
 
 function applyOverride(code, config) {
